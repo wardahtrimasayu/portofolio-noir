@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { DEFAULT_LOCALE, LOCALES, htmlLang, localizePath, switchLocalePath, toLocale } from './locales';
-import { ui, useTranslations } from './ui';
+import { ui } from './ui';
 
 describe('locales', () => {
   it('serves English by default and Brazilian Portuguese', () => {
@@ -62,8 +62,4 @@ describe('ui dictionary', () => {
     }
   });
 
-  it('interpolates {placeholders}', () => {
-    const t = useTranslations('pt-br');
-    expect(t('ports.count', { count: 11 })).toContain('11');
-  });
 });

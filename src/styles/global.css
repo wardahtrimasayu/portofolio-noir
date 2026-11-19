@@ -13,8 +13,8 @@
   --color-fg: var(--tn-text-primary);
   --color-muted: var(--tn-text-muted);
   --color-faint: var(--tn-text-faint);
-  --color-accent: var(--tn-accent-primary);
-  --color-on-accent: var(--tn-accent-on-primary);
+  --color-accent: #c084fc;
+  --color-on-accent: #09090b;
   --color-success: var(--tn-accent-success);
   --color-warning: var(--tn-accent-warning);
   --color-error: var(--tn-accent-error);

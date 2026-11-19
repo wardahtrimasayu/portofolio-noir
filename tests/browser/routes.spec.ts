@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const paths = ['', 'about', 'integrations', 'integrations/editor', 'docs', 'showcase'];
+const paths = ['', 'about', 'integrations', 'integrations/pengolahan-data-excel', 'docs'];
 
 for (const locale of ['', 'pt-br/']) {
   for (const path of paths) {

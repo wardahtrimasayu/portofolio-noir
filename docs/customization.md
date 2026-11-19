@@ -38,8 +38,7 @@ imported by `src/layouts/Layout.astro`: Inter, Newsreader and JetBrains Mono.
 Noir is the default. Paper is stored as `tn-theme=light`. The mode buttons are labeled `Noir` and `Paper` in both
 locales (`theme.noir` and `theme.paper` in `src/i18n/ui.ts`).
 
-## Remove the showcase
+## Routes
 
-The showcase is `src/pages/showcase.astro`, `src/pages/pt-br/showcase.astro` and `src/views/Showcase.astro`. Delete
-those files and remove the `/showcase` item from `site.nav` plus the unused `nav.showcase` dictionary keys in both
-locales.
+The starter portfolio includes home, about, integrations and profile pages in English and Brazilian Portuguese. Add a
+page route and its navigation entry only when the page is part of your portfolio.

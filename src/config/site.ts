@@ -45,29 +45,29 @@ const schema = z.object({
 
 export const parseSite = (value: unknown) => schema.parse(value);
 export const site = parseSite({
-  name: 'Noir CLI',
-  terminalLabel: '~/noir-cli',
-  url: resolveSiteUrl(process.env.SITE_URL),
-  repository: 'https://github.com/nandomoreirame/terminalnoir-astro-theme',
-  author: 'Your name',
+  name: 'Wardah Tri Masayu',
+  terminalLabel: '~/wardahtri',
+  url: 'https://wardahtrimasayu.github.io',
+  repository: 'https://github.com/wardahtrimasayu/wardahtrimasayu.github.io',
+  author: 'Wardah Tri Masayu',
   version: '0.0.1',
   ctas: {
     en: {
-      header: { label: 'Get started', href: '/docs#quickstart' },
+      header: { label: 'Mulai', href: '/docs' },
       hero: {
-        primary: { label: 'Docs', href: '/docs' },
-        secondary: { label: 'Integrations', href: '/integrations' },
+        primary: { label: 'Tentang Saya', href: '/docs' },
+        secondary: { label: 'Proyek Saya', href: '/integrations' },
       },
       box: {
-        eyebrow: 'Open source',
-        title: 'Make it yours.',
-        body: 'Replace the name, domain and example integrations, then publish the static site.',
-        primary: { label: 'GitHub repository', href: 'repository' },
-        secondary: { label: 'Read the guide', href: '/docs' },
+        eyebrow: 'Portofolio',
+        title: 'Halo! Selamat datang di ruang digital saya.',
+        body: 'Saya Wardah Tri Masayu, mahasiswa yang antusias mempelajari pemrograman dan pengembangan web.',
+        primary: { label: 'Repositori Github', href: 'repository' },
+        secondary: { label: 'Lihat Profil', href: '/docs' },
       },
     },
     'pt-br': {
-      header: { label: 'Começar', href: '/docs#quickstart' },
+      header: { label: 'Começar', href: '/docs' },
       hero: {
         primary: { label: 'Documentação', href: '/docs' },
         secondary: { label: 'Integrações', href: '/integrations' },
@@ -86,16 +86,15 @@ export const site = parseSite({
     { href: '/about', key: 'nav.about' },
     { href: '/integrations', key: 'nav.integrations' },
     { href: '/docs', key: 'nav.docs' },
-    { href: '/showcase', key: 'nav.showcase' },
   ],
   hero: {
     en: {
-      title: 'Build with clarity.',
-      description: 'A fictional developer tool demonstrating Terminal Noir Astro Theme.',
+      title: 'Portofolio Wardah Tri Masayu',
+      description: 'Mahasiswa Statistika yang tertarik pada analisis data dan pemrograman.',
     },
     'pt-br': {
-      title: 'Desenvolva com clareza.',
-      description: 'Uma ferramenta fictícia para demonstrar o Terminal Noir Astro Theme.',
+      title: 'Portofolio Wardah Tri Masayu',
+      description: 'Mahasiswa Statistika yang tertarik pada analisis data dan pemrograman.',
     },
   },
   install: [

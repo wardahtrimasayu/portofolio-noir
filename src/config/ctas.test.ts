@@ -9,7 +9,7 @@ vi.mock('./site', async importOriginal => {
   const actions = (suffix: string) => ({
     header: { label: `Header ${suffix}`, href: '/about#start' },
     hero: {
-      primary: { label: `Hero primary ${suffix}`, href: '/showcase' },
+      primary: { label: `Hero primary ${suffix}`, href: '/docs' },
       secondary: { label: `Hero secondary ${suffix}`, href: 'https://example.org/download' },
     },
     box: {

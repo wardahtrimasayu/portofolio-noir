@@ -2,7 +2,6 @@
 import { Icon } from 'astro-icon/components';
 import CopyStatus from '../components/CopyStatus.astro';
 import CtaBox from '../components/CtaBox.astro';
-import InstallTabs from '../components/InstallTabs.astro';
 import IntegrationCard from '../components/IntegrationCard.astro';
 import Section from '../components/Section.astro';
 import SectionHeader from '../components/SectionHeader.astro';
@@ -82,15 +81,6 @@ const featured = integrations.filter(item => item.featured);
       </ul>
     </Section>
   )}
-
-  <Section id="quickstart">
-    <SectionHeader
-      eyebrow={t('quickstart.eyebrow')}
-      title={t('quickstart.title')}
-      description={t('quickstart.descriptionHome')}
-    />
-    <InstallTabs id="home" />
-  </Section>
 
   <Section last>
     <CtaBox />

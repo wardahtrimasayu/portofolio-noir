@@ -9,6 +9,7 @@ it('renders configured identity and repository', async () => {
   expect(html).toContain(site.terminalLabel);
   expect(html).toContain(site.repository);
   expect(html).not.toContain(['terminalnoir', 'web.app'].join('.'));
+  expect(html).not.toContain('href="/showcase"');
 });
 
 it.each(['/', '/pt-br'])('credits the theme author in the footer on %s', async pathname => {

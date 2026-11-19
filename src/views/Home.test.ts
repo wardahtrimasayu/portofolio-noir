@@ -10,6 +10,8 @@ it('presents a developer tool instead of a terminal palette', async () => {
   expect(html).toContain('/integrations');
   expect(html).not.toContain('Bats');
   expect(html).not.toContain('/ports');
+  expect(html).not.toContain('npm install example-package');
+  expect(html).not.toContain('id="quickstart"');
 });
 
 it('hides featured content when the catalogue is empty', async () => {
